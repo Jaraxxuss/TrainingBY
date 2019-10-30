@@ -38,11 +38,11 @@ public class BusinessTrip {
     }
 
     public void show(){
-        System.out.println("account" + accountName);
-        System.out.println("rate" + DAYLY_ALLOWANCE_RATE);
-        System.out.println("transport" + transportationExpenses);
-        System.out.println("days" + numberOfDays);
-        System.out.println("total" + convertToByn(getTotal()));
+        System.out.println("account = " + accountName);
+        System.out.println("rate = " + DAYLY_ALLOWANCE_RATE);
+        System.out.println("transport = " + transportationExpenses);
+        System.out.println("days = " + numberOfDays);
+        System.out.println("total = " + convertToByn(getTotal()));
 
     }
 
