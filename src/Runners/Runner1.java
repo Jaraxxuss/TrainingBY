@@ -9,7 +9,7 @@ public class Runner1 {
         BusinessTrip[] businessTrips = {
                 new BusinessTrip("Alex",5,100),
                 new BusinessTrip("Jax",3,150),
-                new BusinessTrip(),
+                null,
                 new BusinessTrip("Dex",2,170),
                 new BusinessTrip("Pix",6,125)
         };
@@ -26,7 +26,9 @@ public class Runner1 {
     }
     public static void printWithShow(BusinessTrip[] businessTrips){
         for (BusinessTrip businessTrip : businessTrips) {
-            businessTrip.show();
+            if(businessTrip != null) {
+                businessTrip.show();
+            }
         }
     }
     public static void printWithToString(BusinessTrip[] businessTrips){
